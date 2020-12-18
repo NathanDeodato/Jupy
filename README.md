@@ -20,7 +20,12 @@
 
 ### 🛠 Technology
 
-<li> Python
+#### Jupy-v1
+<li> Python </li>
+
+#### Jupy-v2
+<li> Python </li>
+    <li> Kivy </li>
 
 <br>
 
