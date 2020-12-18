@@ -1,4 +1,4 @@
-# Cave-Py
+# Jupy
 
 ## Project description
 
