@@ -25,7 +25,9 @@
 
 #### Jupy-v2
 <li> Python </li>
-    <li>Lib: <p>Kivy</p> </li>
+
+##### Lib    
+<li> Kivy </li>
 
 <br>
 
