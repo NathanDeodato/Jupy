@@ -11,7 +11,7 @@
 
 ### Image Project
 #### Jupy-v1
-![Jupy-v1](caminho/do/arquivo)
+![Jupy-v1](/Img/Jupy-v1.png)
 
 #### Jupy-v2
 ![Jupy-v2](caminho/do/arquivo)
