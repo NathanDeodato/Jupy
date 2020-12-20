@@ -25,8 +25,6 @@
 
 #### Jupy-v2
 <li> Python </li>
-
-#### Lib
 <li>Kivy</li>
 
 <br>
