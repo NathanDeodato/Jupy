@@ -1,6 +1,6 @@
-print("-=" * 100)
-print("-- Jupy$ v1 --".center(100))
-print("-=" * 100)
+print("-=" * 79)
+print("-- Jupy$ v1 --".center(158))
+print("-=" * 79)
 
 # Libs
 from time import sleep
@@ -12,20 +12,20 @@ print("Espero conseguir te ajudar.")
 
 sleep(2)
 
-print("-=" * 100)
+print("-=" * 79)
 
 def jupyv1():
     jupy = "Jupy$"
 
     # Comands Jupy
-    print("-- Comandos Jupy --".center(100))
+    print("-- Comandos Jupy --".center(158))
 
-    print("-=" * 100)
+    print("-=" * 79)
 
     print("Jupy List - Lista de tipo de informações que ele tem registradas")
     print("Jupy Copy - Copyrigth do Jupy")
 
-    print("-=" * 100)
+    print("-=" * 79)
 
     print("[ 1 ] COMANDO JUPY")
     print("[ 2 ] HARDWARE")
@@ -36,7 +36,7 @@ def jupyv1():
     while nicho != 1 and nicho != 2 and nicho != 3 and nicho != 4:
         nicho = int(input("ERRO! Opção: "))
 
-    print("-=" * 100)
+    print("-=" * 79)
 
     # Pergunta do usúario
     if nicho != 1:
@@ -44,7 +44,7 @@ def jupyv1():
 
     pergunta = str(input("Pergunta$: ")).lower()
 
-    print("-=" * 100)
+    print("-=" * 79)
     
     ## Time
     sleep(2)
@@ -61,13 +61,13 @@ def jupyv1():
     ## Comandos Jupy
     if nicho == 1:
         if pergunta == "jupy list":
-            print("-- Jupy$ list --".center(100))
+            print("-- Jupy$ list --".center(158))
             print("° Hardware")
             print("° Linguagem de programação")
             print("° Consoles")
         
         elif pergunta == "jupy copy":
-            print("-- (C) NT Developer --".center(100))
+            print("-- (C) NT Developer --".center(158))
 
     ## Componentes eletrônicos
     if nicho == 2:
@@ -482,14 +482,14 @@ def jupyv1():
             print("que incorpora a tecnologia SmartShift da AMD, que ajusta a frequência desses sistemas com base nas atividades atuais de ambos os chips, para atingir o consumo de energia constante ideal e um perfil de desempenho do modelo SoC.")
             print("Por exemplo, se a CPU estiver executando em atividade mais baixa, o sistema de reforço poderá reduzir sua frequência e aumentar a frequência da GPU para permitir que ela funcione com desempenho superior sem afetar o uso de energia ou o resfriamento.")
             print("A GPU suporta a aceleração por hardware da renderização rastreada por ray tracing em tempo real.[11] Ele possui uma nova tecnologia de áudio chamada Tempest Engine, que permite não apenas que centenas de fontes de som")
-            print("em um jogo sejam contabilizadas na produção de saída de áudio em comparação com 100 no PlayStation 4, mas também como esse áudio é apresentado com base no usuário final. O sistema possui 16 GB de GDDR6 SDRAM com uma largura de banda de 448 GB/s.")
+            print("em um jogo sejam contabilizadas na produção de saída de áudio em comparação com 79 no PlayStation 4, mas também como esse áudio é apresentado com base no usuário final. O sistema possui 16 GB de GDDR6 SDRAM com uma largura de banda de 448 GB/s.")
 
             breaklin()
 
             print("Jupy$: Uma solução de armazenamento em um SSD personalizado foi projetado para o PlayStation 5 para aumentar as taxas de entrada/saída de dados, proporcionando tempos de carregamento rápidos.")
             print("Essa velocidade permite que os jogos sejam mais imersivos e suportem resolução 8K. O sistema base possui um SSD de 825 GB conectado por meio de uma interface de 12 canais ao sistema principal, atingindo uma taxa de transferência")
             print("de 5,5 GB/s sem compressão e entre 8 a 9 GB/s usando compressão com o protocolo Oodle Kraken da RAD Game Tools. Esse tamanho de unidade atípico foi considerado ideal para o caminho de 12 canais do sistema, em vez das")
-            print("unidades mais comuns de 1000 GB ou 1 TB. O armazenamento direto para jogos é expansível através de uma porta NVM Express (NVMe) M.2, enquanto o armazenamento adicional pode ser disponibilizado através de unidades compatíveis com USB.")
+            print("unidades mais comuns de 790 GB ou 1 TB. O armazenamento direto para jogos é expansível através de uma porta NVM Express (NVMe) M.2, enquanto o armazenamento adicional pode ser disponibilizado através de unidades compatíveis com USB.")
             print("O sistema suporta uma unidade óptica Ultra HD Blu-ray compatível com 4K. Embora a instalação do jogo a partir de um disco seja obrigatória para tirar proveito do SSD, o usuário tem algum")
             print("controle de quanto instalar, como instalar apenas os componentes multijogador de um jogo.")
 
@@ -502,7 +502,7 @@ def jupyv1():
     ## Time
     sleep(2)
 
-    print("-=" * 100)
+    print("-=" * 79)
 
 
 # Loop do Jupy
@@ -516,21 +516,21 @@ while user == "Azul":
     
     jupyv1()
 
-    print("-- Opções --".center(100))
+    print("-- Opções --".center(158))
     print("[ Azul ] Novamente")
     print("[ Vermelho ] Sair")
 
-    print("-=" * 100)
+    print("-=" * 79)
 
     user = str(input("Opção$: ")).capitalize()
     while user != "Azul" and user != "Vermelho":
         user = str(input("ERRO! Opção$: ")).capitalize()
 
-    print("-=" * 100)
+    print("-=" * 79)
 
     if user == "Azul":
         jupyv1()
     elif user == "Vermelho":
-        print("Jupy$: Encerrando...".center(100))
-        print("-=" * 100)
+        print("Jupy$: Encerrando...".center(158))
+        print("-=" * 79)
         break
