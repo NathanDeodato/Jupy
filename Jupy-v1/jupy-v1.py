@@ -1,6 +1,6 @@
-print("-=" * 50)
+print("-=" * 100)
 print("-- Jupy$ v1 --".center(100))
-print("-=" * 50)
+print("-=" * 100)
 
 # Libs
 from time import sleep
@@ -12,7 +12,7 @@ print("Espero conseguir te ajudar.")
 
 sleep(2)
 
-print("-=" * 50)
+print("-=" * 100)
 
 def jupyv1():
     jupy = "Jupy$"
@@ -20,12 +20,12 @@ def jupyv1():
     # Comands Jupy
     print("-- Comandos Jupy --".center(100))
 
-    print("-=" * 50)
+    print("-=" * 100)
 
     print("Jupy List - Lista de tipo de informações que ele tem registradas")
     print("Jupy Copy - Copyrigth do Jupy")
 
-    print("-=" * 50)
+    print("-=" * 100)
 
     print("[ 1 ] COMANDO JUPY")
     print("[ 2 ] HARDWARE")
@@ -36,7 +36,7 @@ def jupyv1():
     while nicho != 1 and nicho != 2 and nicho != 3 and nicho != 4:
         nicho = int(input("ERRO! Opção: "))
 
-    print("-=" * 50)
+    print("-=" * 100)
 
     # Pergunta do usúario
     if nicho != 1:
@@ -44,7 +44,7 @@ def jupyv1():
 
     pergunta = str(input("Pergunta$: ")).lower()
 
-    print("-=" * 50)
+    print("-=" * 100)
     
     ## Time
     sleep(2)
@@ -67,7 +67,7 @@ def jupyv1():
             print("° Consoles")
         
         elif pergunta == "jupy copy":
-            print("-- (C) NT Developer --".center(50))
+            print("-- (C) NT Developer --".center(100))
 
     ## Componentes eletrônicos
     if nicho == 2:
@@ -118,6 +118,8 @@ def jupyv1():
             print("CPU era um termo comum nos primeiros computadores domésticos, quando outros periféricos da placa-mãe")
             print("normalmente eram alojados em seus próprios cases separados.")
 
+            breaklin()
+
             print("Jupy$: Cases, geralmente, são construídos em aço (muitas vezes, SECC — aço eletrogalvanizado, laminado a frio, e bobina) ou alumínio.")
             print("Plástico é, por vezes, utilizado, e outros materiais, como madeira aparecem em cases construídos em casa.")
 
@@ -135,9 +137,13 @@ def jupyv1():
             print("Apesar de várias partes da linguagem possuírem padrões e especificações formais, a linguagem como um todo não é formalmente")
             print("especificada. O padrão de facto é a implementação CPython.")
 
+            breaklin()
+
             print("Jupy$: A linguagem foi projetada com a filosofia de enfatizar a importância do esforço do programador sobre o esforço computacional.")
             print("Prioriza a legibilidade do código sobre a velocidade ou expressividade. Combina uma sintaxe concisa e clara")
             print("com os recursos poderosos de sua biblioteca padrão e por módulos e frameworks desenvolvidos por terceiros.")
+
+            breaklin()
 
             print("Jupy$: Python é uma linguagem de propósito geral de alto nível, multiparadigma, suporta o paradigma orientado a objetos,")
             print("imperativo, funcional e procedural. Possui tipagem dinâmica e uma de suas principais características é permitir a fácil leitura")
@@ -145,6 +151,8 @@ def jupyv1():
             print("Devido às suas características, ela é principalmente utilizada para processamento de textos, dados científicos e criação de CGIs para páginas")
             print("dinâmicas para a web. Foi considerada pelo público a 3ª linguagem 'mais amada', de acordo com uma pesquisa conduzida")
             print("pelo site Stack Overflow em 2018, e está entre as 5 linguagens mais populares, de acordo com uma pesquisa conduzida pela RedMonk.")
+
+            breaklin()
 
             print("Jupy$: O nome Python teve a sua origem no grupo humorístico britânico Monty Python, criador do")
             print("programa Monty Python's Flying Circus, embora muitas pessoas façam associação com o réptil do mesmo nome (em português, píton ou pitão).")
@@ -155,19 +163,27 @@ def jupyv1():
             print("é uma das três principais tecnologias da World Wide Web. JavaScript permite páginas da Web interativas e, portanto, é uma parte essencial")
             print("dos aplicativos da web. A grande maioria dos sites usa, e todos os principais navegadores têm um mecanismo JavaScript dedicado para executá-lo.")
 
+            breaklin()
+
             print("Jupy$: É atualmente a principal linguagem para programação client-side em navegadores web.")
             print("É também bastante utilizada do lado do servidor através de ambientes como o node.js.")
+
+            breaklin()
 
             print("Jupy$: Como uma linguagem multiparadigma, o JavaScript suporta estilos de programação orientados a eventos, funcionais e imperativos")
             print("(incluindo orientado a objetos e prototype-based), apresentando recursos como fechamentos (closures) e funções de alta ordem comumente")
             print("indisponíveis em linguagens populares como Java e C++. Possui APIs para trabalhar com texto, matrizes, datas, expressões regulares e o DOM, mas a")
             print("linguagem em si não inclui nenhuma E/S, como instalações de rede, armazenamento ou gráficos, contando com isso no ambiente host em que está embutido.")
 
+            breaklin()
+
             print("Jupy$: Foi originalmente implementada como parte dos navegadores web para que scripts pudessem ser executados do lado do cliente e interagissem")
             print("com o usuário sem a necessidade deste script passar pelo servidor, controlando o navegador, realizando comunicação assíncrona e alterando o conteúdo do")
             print("documento exibido, porém os mecanismos JavaScript agora estão incorporados em muitos outros tipos de software host, incluindo")
             print("servidores em servidores e bancos de dados da Web e em programas que não são da Web, como processadores de texto e PDF, e em tempo de")
             print("execução ambientes que disponibilizam JavaScript para escrever aplicativos móveis e de desktop, incluindo widgets de área de trabalho.")
+
+            breaklin()
 
             print("Jupy$: Os termos Vanilla JavaScript e Vanilla JS se referem ao JavaScript não estendido por qualquer estrutura ou biblioteca adicional.")
             print("Scripts escritos em Vanilla JS são códigos JavaScript simples.")
@@ -188,6 +204,8 @@ def jupyv1():
             print("Organização Internacional para Padronização (ISO), criada em 1972 por Dennis Ritchie na empresa AT&T Bell Labs para desenvolvimento")
             print("do sistema operacional Unix (originalmente escrito em Assembly).")
 
+            breaklin()
+
             print("Jupy$: C é uma das linguagens de programação mais populares e existem poucas arquiteturas para as quais não existem compiladores para C.")
             print("C tem influenciado muitas outras linguagens de programação (por exemplo, a linguagem Java), mais notavelmente C++, que originalmente começou como uma extensão para C.")
 
@@ -195,6 +213,8 @@ def jupyv1():
             print("Jupy$: C++ (em português: lê-se 'cê mais mais', em inglês lê-se see plus plus) é uma linguagem de programação compilada multi-paradigma")
             print("(seu suporte inclui linguagem imperativa, orientada a objetos e genérica) e de uso geral. Desde os anos 1990 é uma das linguagens comerciais mais")
             print("populares, sendo bastante usada também na academia por seu grande desempenho e base de utilizadores.")
+
+            breaklin()
 
             print("Jupy$: Bjarne Stroustrup desenvolveu o C++ (originalmente com o nome C with Classes, que significa C com classes em português) em 1983")
             print("no Bell Labs como um adicional à linguagem C. Novas características foram adicionadas com o tempo, como funções virtuais, sobrecarga de operadores,")
@@ -212,10 +232,14 @@ def jupyv1():
             print("por Tecgraf da PUC-Rio em 1993 para expandir aplicações em geral, de forma extensível (que une partes de um programa feitas em mais de uma linguagem), para")
             print("prototipagem e para ser embarcada em softwares complexos, como jogos. Assemelha-se com Python, Ruby e Icon, entre outras.")
 
+            breaklin()
+
             print("Jupy$: Lua foi criada por um time de desenvolvedores do Tecgraf da PUC-Rio, a princípio, para ser usada em um projeto da Petrobras.")
             print("Devido à sua eficiência, clareza e facilidade de aprendizado, passou a ser usada em diversos ramos da programação, como no desenvolvimento de jogos")
             print("(a Blizzard Entertainment, por exemplo, usou a linguagem no jogo World of Warcraft), controle de robôs, processamento de texto, etc.")
             print("Também é frequentemente usada como uma linguagem de propósito geral.")
+
+            breaklin()
 
             print("Jupy$: Lua combina programação procedural com poderosas construções para descrição de dados, baseadas em tabelas associativas e semântica extensível.")
             print("É tipada dinamicamente, interpretada a partir de bytecodes, e tem gerenciamento automático de memória com coleta de lixo.")
@@ -230,6 +254,8 @@ def jupyv1():
             print("PHP, não relacionados a web sites. É possível instalar o PHP na maioria dos sistemas operacionais, gratuitamente.")
             print("Concorrente direto da tecnologia ASP pertencente à Microsoft, o PHP é utilizado em aplicações como o MediaWiki, Facebook, Drupal, Joomla!, WordPress, Magento e o Oscommerce.")
 
+            breaklin()
+
             print("Jupy$: Criado por Rasmus Lerdorf em 1995, o PHP tem a produção de sua implementação principal, referência formal da linguagem, mantida por uma organização chamada The PHP Group.")
             print("O PHP é software livre, licenciado sob a PHP License, uma licença incompatível com a GNU General Public License (GPL) devido a restrições no uso do termo PHP.")
 
@@ -240,6 +266,8 @@ def jupyv1():
             print("Foi inspirada principalmente por Python, Perl, Smalltalk, Eiffel, Ada e Lisp, sendo muito similar em vários aspectos a Python. Ruby está entre as 10 linguagens")
             print("mais populares, de acordo com uma pesquisa conduzida pela RedMonk.")
 
+            breaklin()
+
             print("Jupy$: A implementação 1.8.7 padrão é escrita em C, como uma linguagem de programação de único passe. Não há qualquer especificação da linguagem, assim a implementação")
             print("original é considerada de fato uma referência. Atualmente, há várias implementações alternativas da linguagem, incluindo YARV, JRuby, Rubinius, IronRuby,")
             print("MacRuby e HotRuby, cada qual com uma abordagem diferente, com IronRuby, JRuby e MacRuby fornecendo compilação JIT e, JRuby e MacRuby também fornecendo compilação AOT.")
@@ -249,12 +277,18 @@ def jupyv1():
             print("Jupy$: Julia é uma linguagem de programação dinâmica de alto nível projetada para atender os requisitos da computação de alto desempenho numérico e científico,")
             print("sendo também eficaz para a programação de propósito geral.")
 
+            breaklin()
+
             print("Jupy$: Julia é escrito em C, C++, e Scheme, usando a estrutura do compilador LLVM, enquanto a maior parte da biblioteca padrão de Julia é implementada na própria Julia.")
+
+            breaklin()
 
             print("Jupy$: O desenvolvimento de Julia começou em 2009 e uma versão de código aberto foi divulgado em fevereiro de 2012. Alguns aspectos incomuns do projeto Julia")
             print("incluem ter um sistema sofisticado, com tipos paramétricos dependentes de uma linguagem de programação totalmente dinâmico e adotando expedição múltipla como seu")
             print("paradigma de programação do núcleo. Cada um desses recursos tem aparecido em dialetos Lisp, como Common Lisp e Dylan, mas a combinação dos dois em um")
             print("único idioma é único (ver recursos de linguagem). O aspecto mais notável da implementação da Julia é o seu desempenho que se compara a de linguagens compiladas de alto desempenho.")
+
+            breaklin()
 
             print("Jupy$: Julia se inspira significativamente em Matlab e vários dialetos de Lisp, incluindo Scheme e Common Lisp, e compartilha muitas características com")
             print("Dylan - uma outra linguagem dinâmica múltipla orientada a expedição com a sintaxe - e Fortress, outra linguagem de programação numérica com expedição múltipla e um")
@@ -271,8 +305,12 @@ def jupyv1():
             print("Swift foi desenvolvida para manter compatibilidade com a API Cocoa e com código existente em Objective-C.")
             print("O compilador usa a infraestrutura do LLVM e é distribuído junto do Xcode desde a versão 6.")
 
+            breaklin()
+
             print("Jupy$: Foi anunciada na WWDC em 2014, conferência anual da Apple. Inicialmente um software proprietário, a partir da")
             print("versão 2.2 (dezembro de 2015) foi distribuída sob a licença Apache 2.0.")
+
+            breaklin()
 
             print("Jupy$: Em março de 2017, Swift ficou entre as 10 linguagens mais populares, de acordo com o")
             print("Índice Tiobe, e atualmente está entre as 20 mais populares. De acordo com uma pesquisa conduzida pela RedMonk, está entre as 10 linguagens mais populares.")
@@ -288,6 +326,8 @@ def jupyv1():
             print("Jupy$: O Xbox 360 é um console de video games desenvolvido pela Microsoft. Como sucessor do Xbox original, é o segundo console da série Xbox.")
             print("Ele competiu com o PlayStation 3 da Sony e o Wii da Nintendo como parte da sétima geração de consoles.")
             print("Foi oficialmente anunciado na MTV em 12 de maio de 2005, com lançamento detalhado e informações dos jogos anunciadas mais tarde na edição de 2005 da E3.")
+
+            breaklin()
 
             print("Jupy$: O Xbox 360 possui um serviço online, a Xbox Live, que foi expandida a partir de sua iteração anterior no Xbox original")
             print("e recebeu atualizações regulares durante a vida útil do console.")
@@ -311,10 +351,14 @@ def jupyv1():
             print("É a quarta geração da família de consoles Xbox; foi anunciada pela primeira vez durante a E3 2019 como Project Scarlett.")
             print("Ambos os consoles foram lançados em 10 de novembro de 2020.")
 
+            breaklin()
+
             print("Jupy$: Ambos os consoles sucedem a linha atual do Xbox One, substituindo o carro-chefe do Xbox One X e os modelos de baixo custo do Xbox One S, respectivamente.")
             print("A Microsoft está priorizando o desempenho do hardware, incluindo suporte para resoluções de tela mais altas (até 8K de resolução)")
             print("e taxas de quadros, ray tracing em tempo real e uso de unidade de estado sólido de alta velocidade para reduzir o tempo de carregamento.")
             print("O Xbox Series S usa a mesma CPU e GPU, memória e armazenamento interno reduzidos e não possui uma unidade óptica.")
+
+            breaklin()
 
             print("Jupy$: O Xbox Series X é alimentado por uma CPU AMD Zen 2 customizada de 7 nm com oito núcleos rodando a 3,8 GHz nominal ou quando é usado em")
             print("multithreading simultâneo (SMT), a 3,6 GHz. Um núcleo da CPU é dedicado ao sistema operacional subjacente.")
@@ -323,6 +367,8 @@ def jupyv1():
             print("Esta unidade é capaz de 12.155 teraflops de potência computacional. A unidade é fornecida com 16 GB de SDRAM GDDR6,")
             print("com 10 GB rodando a 560 GB/s para ser usado principalmente com o sistema gráfico e os outros 6 GB a 336 GB/s para as outras funções de computação.")
             print("Após contabilizar o software de sistema, aproximadamente 13,5 GB de memória estarão disponíveis para jogos e outros aplicativos, com o software de sistema apenas usando recursos do pool mais lento.")
+
+            breaklin()
 
             print("Jupy$: A performance alvo do Xbox Series X é renderizar jogos em resolução 4K a 60 quadros por segundo. A Microsoft afirmou que a CPU do console será quatro vezes mais")
             print("poderosa que o Xbox One X, incluindo suporte à ray tracing em tempo real, renderização de até 120 quadros por segundo e resolução 8K através do padrão HDMI 2.1.")
@@ -335,11 +381,15 @@ def jupyv1():
             print("É a quarta geração da família de consoles Xbox; foi anunciada pela primeira vez durante a E3 2019 como Project Scarlett.")
             print("Ambos os consoles foram lançados em 10 de novembro de 2020.")
 
+            breaklin()
+
             print("Jupy$: Ambos os consoles sucedem a linha atual do Xbox One, substituindo o carro-chefe do Xbox One X e os modelos de baixo custo do Xbox One S, respectivamente.")
             print("A Microsoft está priorizando o desempenho do hardware, incluindo suporte para resoluções de tela mais altas (até 8K de resolução)")
             print("e taxas de quadros, ray tracing em tempo real e uso de unidade de estado sólido de alta velocidade para reduzir o tempo de carregamento.")
             print("O Xbox Series S usa a mesma CPU e GPU, memória e armazenamento interno reduzidos e não possui uma unidade óptica.")
-            
+
+            breaklin()
+
             print("Jupy$: O Xbox Series S é comparável no hardware básico ao Xbox Series X, semelhante a como o Xbox One S funciona com o")
             print("Xbox One X, mas carece de algum poder de processamento bruto. Embora execute a mesma CPU com frequências de clock um pouco mais lentas, ele usa uma")
             print("GPU mais lenta, um RNDA2 com 20 CUs a 1,55 GHz para 4 TFLOPS, em comparação com 12 TFLOPS do Series X. Ele vem com 10 GB de RAM e 512 GB de")
@@ -353,10 +403,14 @@ def jupyv1():
             print("Foi lançado no dia 4 de março de 2000 no Japão, no dia 26 de outubro na América do Norte, e posteriormente, no dia 24 de novembro na Europa e 3 de dezembro no Brasil.")
             print("Foi o sucessor do PlayStation. O PlayStation 2 é um console de sexta geração, que competiu com o Dreamcast da Sega, o GameCube da Nintendo e o Xbox da Microsoft.")
 
+            breaklin()
+
             print("Jupy$: Devido à imensa popularidade em todo o mundo, o console, assim como seus jogos, continuaram a ser fabricados mesmo após o lançamento do seu sucessor, o PlayStation 3.")
             print("Somente depois de 13 anos do seu lançamento, perto do anúncio do lançamento do PlayStation 4, que o jornal japonês Asahi Shimbun anunciou o encerramento da")
             print("fabricação do console no Japão no dia 30 de dezembro de 2012. E no dia 4 de janeiro de 2013, o jornal britânico The Guardian anunciou que a Sony")
             print("encerrou a produção dos consoles PlayStation 2 no mundo inteiro.")
+
+            breaklin()
 
             print("Jupy$: O PS2 é o console de videogame mais vendido de todos os tempos. De acordo com dados provenientes da Sony de 31 de março de 2012, foram vendidas mais de") 
             print("155 milhões de unidades de PlayStation 2 e mais de 420 milhões de unidades de jogos originais do console. Foram lançados mais de 4000 jogos oficiais, licenciados para o console.")
@@ -367,12 +421,16 @@ def jupyv1():
             print("Foi lançado em 11 de novembro de 2006, no Japão, 17 de novembro de 2006 na América do Norte e em 23 de março de 2007 na Europa e Oceania.")
             print("O PlayStation 3 compete com o console Xbox 360 da Microsoft e o Wii da Nintendo como parte da sétima geração de consoles de videogames.")
 
+            breaklin()
+
             print("Jupy$: O console foi anunciado oficialmente pela primeira vez na edição de 2005 da E3 e foi lançado no final de 2006. Foi o primeiro console a usar o disco")
             print("Blu-ray como formato de mídia para gravação de jogos, seu meio de armazenamento primário. Foi o primeiro console da Sony a ter um Sistema On-line a PSN,")
             print("a PlayStation Network, e a sua conectividade remota com o PlayStation Portable e PlayStation Vita, sendo capaz de controlar remotamente os dispositivos.")
             print("Em setembro de 2009, o modelo Slim do PlayStation 3 foi lançado. Foi removida a capacidade de hardware para executar os jogos do PlayStation 2.")
             print("Era mais leve e mais fino do que a versão original, e apresentava um logotipo redesenhado e design de marketing, bem como uma pequena mudança de start-up no software.")
             print("Um novo modelo denominado Super Slim foi lançado no final de 2012, refinando e redesenhando o console.")
+
+            breaklin()
 
             print("Jupy$: O sistema teve um início com vendas ruins no mercado[10], porém conseguiu se recuperar, especialmente após a introdução do modelo Slim.")
             print("O seu sucessor, o PlayStation 4, foi lançado em 15 de novembro de 2013. Em 29 de setembro de 2015, a Sony confirmou que a produção de novos consoles iriam ser")
@@ -384,15 +442,21 @@ def jupyv1():
             print("produzida pela empresa Sony Interactive Entertainment e lançado em Novembro de 2013, como a quarta edição da série PlayStation, sucessora da PlayStation 3, competindo")
             print("directamente com a Wii U da Nintendo e, com a Xbox One da Microsoft.")
 
+            breaklin()
+
             print("Jupy$: Foi anunciada em Fevereiro de 2013 durante uma conferência de imprensa da Sony em Nova Iorque, no evento 'PlayStation Meeting 2013' cujo tema foi 'O Futuro da PlayStation'.")
             print("Foi lançada na América do Norte a 15 de Novembro de 2013, na Europa e América do Sul a 29 de Novembro de 2013 e no Japão a 22 de Fevereiro de 2014.")
             print("A PlayStation 4 é a primeira consola da Sony a ser oficialmente e legalmente editada na China desde a PlayStation 2, depois do levantamento da proibição que durou 14 anos.")
+
+            breaklin()
 
             print("Jupy$: Afastando-se da arquitectura Cell da sua antecessora, a PlayStation 4 é a primeira da série da Sony que apresenta arquitectura x86, mais especificamente com a Unidade de")
             print("Processamento Acelerado (UPA) AMD x86-64, uma plataforma amplamente usada e comum em muitos dos microcomputadores modernos. A ideia é fazer com que o desenvolvimento de jogos eletrónicos")
             print("seja mais fácil para a consola, atraindo uma ampla gama de grandes e pequenos produtores. Estas mudanças destacam o esforço da Sony para melhorar as lições aprendidas durante o")
             print("desenvolvimento, produção e lançamento da PlayStation 3. Outros recursos de hardware notáveis da PlayStation 4 incluem 8GB GDDR5 de memória, um leitor Blu-ray mais rápido e um GPU que consegue")
             print("um desempenho de 1.843 TFLOPS/s. Em conversa para a revista Edge, vários produtores de videojogos descrevem a diferença de desempenho entre a PlayStation 4 e a Xbox One como 'significativa' e 'óbvia'.")
+
+            breaklin()
 
             print("Jupy$: A consola permite vários métodos de interactividade com outros serviços e aparelhos incluindo; a PlayStation App, uma aplicação que melhora e expande a interactividade com a consola usando")
             print("aparelhos iOS e Android; o Remote Play, que permite activar a PlayStation 4 à distância para continuar a jogar num segundo ecrã via PlayStation Vita ou dispositivos Xperia; o PlayStation Now, um")
@@ -405,21 +469,27 @@ def jupyv1():
             print("e Singapura, e em 19 de novembro para o resto do mundo. A plataforma foi lançada em duas versões, um sistema com entrada para disco óptico compatível com Blu-ray Ultra HD para suporte a jogos lançados em mídia física ou baixados")
             print("através da PlayStation Store e uma versão digital de menor custo sem a unidade de disco, utilizando apenas o download digital.")
 
+            breaklin()
+
             print("Jupy$: O PlayStation 5 possui uma unidade de estado sólido personalizada projetada para a leitura de dados de alta velocidade para permitir melhorias significativas no desempenho gráfico.")
             print("O hardware também possui uma GPU AMD personalizada capaz de fornecer suporte a Ray-tracing, displays de resolução 4K e até 120 quadros por segundo, um novo hardware de áudio para efeitos")
             print("de áudio 3D em tempo real e retrocompatibilidade com a maioria dos jogos do PlayStation 4 e PlayStation VR.")
+
+            breaklin()
 
             print("Jupy$: O PlayStation 5 usa a microarquitetura Zen 2 de 7nm da AMD com uma CPU de 8 núcleos rodando em uma frequência variável limitada a 3.5 GHz. A GPU é um sistema personalizado em um chip (SoC)")
             print("baseado no RDNA 2 da AMD, com 36 unidades de computação em execução em uma frequência variável, limitada a 2.23 GHz e com capacidade de 10.28 TFLOPS. Tanto a CPU quanto a GPU são monitoradas por um sistema de impulso especial")
             print("que incorpora a tecnologia SmartShift da AMD, que ajusta a frequência desses sistemas com base nas atividades atuais de ambos os chips, para atingir o consumo de energia constante ideal e um perfil de desempenho do modelo SoC.")
             print("Por exemplo, se a CPU estiver executando em atividade mais baixa, o sistema de reforço poderá reduzir sua frequência e aumentar a frequência da GPU para permitir que ela funcione com desempenho superior sem afetar o uso de energia ou o resfriamento.")
             print("A GPU suporta a aceleração por hardware da renderização rastreada por ray tracing em tempo real.[11] Ele possui uma nova tecnologia de áudio chamada Tempest Engine, que permite não apenas que centenas de fontes de som")
-            print("em um jogo sejam contabilizadas na produção de saída de áudio em comparação com 50 no PlayStation 4, mas também como esse áudio é apresentado com base no usuário final. O sistema possui 16 GB de GDDR6 SDRAM com uma largura de banda de 448 GB/s.")
+            print("em um jogo sejam contabilizadas na produção de saída de áudio em comparação com 100 no PlayStation 4, mas também como esse áudio é apresentado com base no usuário final. O sistema possui 16 GB de GDDR6 SDRAM com uma largura de banda de 448 GB/s.")
+
+            breaklin()
 
             print("Jupy$: Uma solução de armazenamento em um SSD personalizado foi projetado para o PlayStation 5 para aumentar as taxas de entrada/saída de dados, proporcionando tempos de carregamento rápidos.")
             print("Essa velocidade permite que os jogos sejam mais imersivos e suportem resolução 8K. O sistema base possui um SSD de 825 GB conectado por meio de uma interface de 12 canais ao sistema principal, atingindo uma taxa de transferência")
             print("de 5,5 GB/s sem compressão e entre 8 a 9 GB/s usando compressão com o protocolo Oodle Kraken da RAD Game Tools. Esse tamanho de unidade atípico foi considerado ideal para o caminho de 12 canais do sistema, em vez das")
-            print("unidades mais comuns de 500 GB ou 1 TB. O armazenamento direto para jogos é expansível através de uma porta NVM Express (NVMe) M.2, enquanto o armazenamento adicional pode ser disponibilizado através de unidades compatíveis com USB.")
+            print("unidades mais comuns de 1000 GB ou 1 TB. O armazenamento direto para jogos é expansível através de uma porta NVM Express (NVMe) M.2, enquanto o armazenamento adicional pode ser disponibilizado através de unidades compatíveis com USB.")
             print("O sistema suporta uma unidade óptica Ultra HD Blu-ray compatível com 4K. Embora a instalação do jogo a partir de um disco seja obrigatória para tirar proveito do SSD, o usuário tem algum")
             print("controle de quanto instalar, como instalar apenas os componentes multijogador de um jogo.")
 
@@ -432,7 +502,7 @@ def jupyv1():
     ## Time
     sleep(2)
 
-    print("-=" * 50)
+    print("-=" * 100)
 
 
 # Loop do Jupy
@@ -450,17 +520,17 @@ while user == "Azul":
     print("[ Azul ] Novamente")
     print("[ Vermelho ] Sair")
 
-    print("-=" * 50)
+    print("-=" * 100)
 
     user = str(input("Opção$: ")).capitalize()
     while user != "Azul" and user != "Vermelho":
         user = str(input("ERRO! Opção$: ")).capitalize()
 
-    print("-=" * 50)
+    print("-=" * 100)
 
     if user == "Azul":
         jupyv1()
     elif user == "Vermelho":
         print("Jupy$: Encerrando...".center(100))
-        print("-=" * 50)
+        print("-=" * 100)
         break
