@@ -15,6 +15,7 @@ sleep(2)
 print("-=" * 79)
 
 def jupyv1():
+    from time import sleep
     jupy = "Jupy$"
 
     # Comands Jupy
@@ -322,7 +323,7 @@ def jupyv1():
 
     ## Consoles
     if nicho == 4:
-        if pergunta == "o que e um xbox 360?" or pergunta == "o que e um xbox 360" or pergunta == "o que e o xbox 360?" or pergunta == "o que e o xbox 360":
+        if pergunta == "o que e um xbox 360?" or pergunta == "o que e um xbox 360" or pergunta == "o que e o xbox 360?" or pergunta == "o que e o xbox 360" or pergunta == "o que e xbox 360?" or pergunta == "o que e xbox 360":
             print("Jupy$: O Xbox 360 é um console de video games desenvolvido pela Microsoft. Como sucessor do Xbox original, é o segundo console da série Xbox.")
             print("Ele competiu com o PlayStation 3 da Sony e o Wii da Nintendo como parte da sétima geração de consoles.")
             print("Foi oficialmente anunciado na MTV em 12 de maio de 2005, com lançamento detalhado e informações dos jogos anunciadas mais tarde na edição de 2005 da E3.")
@@ -338,7 +339,7 @@ def jupyv1():
             print("O lançamento desses serviços adicionais e periféricos ajudou a marca Xbox a crescer a partir de jogos para englobar todos os")
             print("multimídia, transformando-o em um hub para entretenimento na sala de estar.")
 
-        elif pergunta == "o que e um xbox one?" or pergunta == "o que e um xbox one" or pergunta == "o que e o xbox one?" or pergunta == "o que e o xbox one":
+        elif pergunta == "o que e um xbox one?" or pergunta == "o que e um xbox one" or pergunta == "o que e o xbox one?" or pergunta == "o que e o xbox one" or pergunta == "o que e xbox one?" or pergunta == "o que e xbox one":
             print("Jupy$: Xbox One é um console de videojogos, da oitava geração, produzida pela empresa Microsoft, lançado em 2013, como a terceira edição da série Xbox")
             print("e, sucessor do Xbox 360. Competindo diretamente com os consoles PlayStation 4 e Nintendo Switch. Introduzido no mercado oito anos")
             print("após o lançamento do Xbox 360. O Xbox One apresenta jogos com gráficos de alta definição superiores aos vistos no seu antecessor.")
@@ -346,7 +347,7 @@ def jupyv1():
             print("no evento especial Xbox Reveal, como o sucessor do Xbox 360. Seu lançamento oficial foi feito em novembro de 2013 custando US$ 499,00 (€ 499,00 ou R$ 2.299,00).")
             print("O codinome de desenvolvimento do Xbox One foi denominado de Durango e foi anunciado oficialmente no dia 21 de maio de 2013.")
 
-        elif pergunta == "o que e um xbox series x?" or pergunta == "o que e um xbox series x" or pergunta == "o que e o xbox series x?" or pergunta == "o que e o xbox series x":
+        elif pergunta == "o que e um xbox series x?" or pergunta == "o que e um xbox series x" or pergunta == "o que e o xbox series x?" or pergunta == "o que e o xbox series x" or pergunta == "o que e xbox series x?" or pergunta == "o que e xbox series x":
             print("Jupy$: O Xbox Series X e o Series S (coletivamente chamados de Xbox Series X/S[a]) são consoles domésticos de jogos eletrônicos desenvolvidos pela Microsoft.")
             print("É a quarta geração da família de consoles Xbox; foi anunciada pela primeira vez durante a E3 2019 como Project Scarlett.")
             print("Ambos os consoles foram lançados em 10 de novembro de 2020.")
@@ -376,7 +377,7 @@ def jupyv1():
             print("Baixa Latência (ALLM), que estão sendo incorporados às televisões mais recentes. O console terá aceleração de hardware de áudio dedicada.")
             print("Um recurso chamado 'audio ray tracing' usará os processadores gráficos de ray tracing para processar o áudio espacial da mesma maneira para melhorar a imersão de áudio para o jogador.")
 
-        elif pergunta == "o que e um xbox series s?" or pergunta == "o que e um xbox series s" or pergunta == "o que e o xbox series s?" or pergunta == "o que e o xbox series s":
+        elif pergunta == "o que e um xbox series s?" or pergunta == "o que e um xbox series s" or pergunta == "o que e o xbox series s?" or pergunta == "o que e o xbox series s" or pergunta == "o que e xbox series s?" or pergunta == "o que e xbox series s":
             print("Jupy$: O Xbox Series X e o Series S (coletivamente chamados de Xbox Series X/S[a]) são consoles domésticos de jogos eletrônicos desenvolvidos pela Microsoft.")
             print("É a quarta geração da família de consoles Xbox; foi anunciada pela primeira vez durante a E3 2019 como Project Scarlett.")
             print("Ambos os consoles foram lançados em 10 de novembro de 2020.")
@@ -398,7 +399,7 @@ def jupyv1():
             print("chegar a 120 quadros por segundo nesta resolução. Apesar disso, o console tem todas as funções equivalentes ao Xbox Series X, incluindo portas, expansões e suporte a jogos.")
             print("A unidade tem um formato menor e será enviada com um case branco fosco em contraste com o case preto fosco do lançamento inicial do Series X.")
 
-        elif pergunta == "o que e um ps2?" or pergunta == "o que e um ps2" or pergunta == "o que e o ps2?" or pergunta == "o que e o ps2":
+        elif pergunta == "o que e um ps2?" or pergunta == "o que e um ps2" or pergunta == "o que e o ps2?" or pergunta == "o que e o ps2" or pergunta == "o que e ps2?" or pergunta == "o que e ps2":
             print("Jupy$: O PlayStation 2 (oficialmente abreviado como PS2) é um console de jogos eletrônicos produzido pela Sony Computer Entertainment.")
             print("Foi lançado no dia 4 de março de 2000 no Japão, no dia 26 de outubro na América do Norte, e posteriormente, no dia 24 de novembro na Europa e 3 de dezembro no Brasil.")
             print("Foi o sucessor do PlayStation. O PlayStation 2 é um console de sexta geração, que competiu com o Dreamcast da Sega, o GameCube da Nintendo e o Xbox da Microsoft.")
@@ -416,7 +417,7 @@ def jupyv1():
             print("155 milhões de unidades de PlayStation 2 e mais de 420 milhões de unidades de jogos originais do console. Foram lançados mais de 4000 jogos oficiais, licenciados para o console.")
             print("O último jogo lançado para PlayStation 2 foi Pro Evolution Soccer 2014 lançado em 8 de novembro de 2013.")
 
-        elif pergunta == "o que e um ps3?" or pergunta == "o que e um ps3" or pergunta == "o que e o ps3?" or pergunta == "o que e o ps3":
+        elif pergunta == "o que e um ps3?" or pergunta == "o que e um ps3" or pergunta == "o que e o ps3?" or pergunta == "o que e o ps3" or pergunta == "o que e ps3?" or pergunta == "o que e ps3":
             print("Jupy$: O PlayStation 3 (PS3) é um console de videogames desenvolvido pela Sony Computer Entertainment. É o sucessor do PlayStation 2 e faz parte da marca PlayStation de consoles.")
             print("Foi lançado em 11 de novembro de 2006, no Japão, 17 de novembro de 2006 na América do Norte e em 23 de março de 2007 na Europa e Oceania.")
             print("O PlayStation 3 compete com o console Xbox 360 da Microsoft e o Wii da Nintendo como parte da sétima geração de consoles de videogames.")
@@ -437,7 +438,7 @@ def jupyv1():
             print("descontinuadas na Nova Zelândia, porém o sistema permaneceu em produção em outros mercados. A fabricação de novas unidades nos Estados Unidos terminaram em outubro de 2016.")
             print("Em 2017, o Japão foi o último território em que novas unidades ainda estavam sendo produzidas até 29 de maio de 2017, quando a Sony confirmou que o PlayStation 3 era descontinuado no Japão.")
 
-        elif pergunta == "o que e um ps4?" or pergunta == "o que e um ps4" or pergunta == "o que e o ps4?" or pergunta == "o que e o ps4":
+        elif pergunta == "o que e um ps4?" or pergunta == "o que e um ps4" or pergunta == "o que e o ps4?" or pergunta == "o que e o ps4" or pergunta == "o que e ps4?" or pergunta == "o que e ps4":
             print("Jupy$: A PlayStation 4 (プレイステーション4 Pureisutēshon Fō?, oficialmente abreviada como PS4) é uma consola de videojogos, da oitava geração com arquitetura x86,")
             print("produzida pela empresa Sony Interactive Entertainment e lançado em Novembro de 2013, como a quarta edição da série PlayStation, sucessora da PlayStation 3, competindo")
             print("directamente com a Wii U da Nintendo e, com a Xbox One da Microsoft.")
@@ -463,7 +464,7 @@ def jupyv1():
             print("serviço de computação em nuvem baseado em Gaikai, que oferece videojogos e outros conteúdos em stream. Pela incorporação de um botão de partilha (SHARE) no novo comando, o DualShock 4, faz com que seja")
             print("possível exibir conteúdo que está a ser jogado e transmitido ao vivo aos amigos, ou mesmo partilhar jogos através da característica ‘Share Play’, desta maneira a Sony planeia colocar assim mais foco nos aspectos sociais da consola.")
 
-        elif pergunta == "o que e um ps5?" or pergunta == "o que e um ps5" or pergunta == "o que e o ps5?" or pergunta == "o que e o ps5":
+        elif pergunta == "o que e um ps5?" or pergunta == "o que e um ps5" or pergunta == "o que e o ps5?" or pergunta == "o que e o ps5" or pergunta == "o que e ps5?" or pergunta == "o que e ps5":
             print("Jupy$: O PlayStation 5, oficialmente abreviado como PS5, é um console de jogos eletrônicos de nona geração, desenvolvido pela Sony Interactive Entertainment. Foi anunciado em outubro de 2018")
             print("e confirmado em outubro de 2019 como o quinto da série PlayStation e sucessor do PlayStation 4. O console foi lançado em 12 de novembro de 2020 na América do Norte, Austrália, Coreia do Sul, Japão, Nova Zelândia")
             print("e Singapura, e em 19 de novembro para o resto do mundo. A plataforma foi lançada em duas versões, um sistema com entrada para disco óptico compatível com Blu-ray Ultra HD para suporte a jogos lançados em mídia física ou baixados")
