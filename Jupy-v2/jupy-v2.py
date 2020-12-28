@@ -12,12 +12,12 @@ def winJupy():
 
         [sg.Text("_" * 68)],
 
-        [sg.Text(" " * 50), sg.Text("-- OPÇÕES --")],
+        [sg.Text(" " * 46), sg.Text("-- OPÇÕES --")],
         [sg.Radio("Comando Jupy", group_id="opc"), sg.Radio("Hardware", group_id="opc"), sg.Radio("Linguagem de Programção", group_id="opc"), sg.Radio("Console", group_id="opc")],
         
         [sg.Text("_" * 68)],
 
-        [sg.Text("Pergunta$:", size=(9, 0)), sg.Input(size=(41, 0), key="pergunta"), sg.Button("Send", size=(5, 0))],
+        [sg.Text("Pergunta$:", size=(10, 0)), sg.Input(size=(46, 0), key="pergunta"), sg.Button("Send", size=(5, 0))],
 
         [sg.Output(size=(66, 12))],
         [sg.Text(" " * 45), sg.Text("(C) NT Developer")]
