@@ -25,7 +25,7 @@
 
 #### Jupy-v2
 <li> Python </li>
-<li>Kivy</li>
+<li>PySimpleGUI</li>
 
 <br>
 
