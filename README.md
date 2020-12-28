@@ -20,10 +20,6 @@
 
 ### 🛠 Technology
 
-#### Jupy-v1
-<li> Python </li>
-
-#### Jupy-v2
 <li> Python </li>
 <li>PySimpleGUI</li>
 
