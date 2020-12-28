@@ -14,7 +14,7 @@
 ![Jupy-v1](/Img/Jupy-v1.png)
 
 #### Jupy-v2
-![Jupy-v2](caminho/do/arquivo)
+![Jupy-v2](/Img/Jupy-v2.png)
 
 <br>
 
