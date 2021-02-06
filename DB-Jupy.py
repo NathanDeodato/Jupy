@@ -2,6 +2,13 @@ def breaklin():
     print("")
 
 def BDjupy(pergunta, nicho):
+    """
+        
+
+        Pergunta -> É a váriavel que vai passar a pergunta para o 'Banco de Dados'.
+        nicho -> É o número do tema que a pergunta representa.
+    """
+    
     if nicho == 1:
         if pergunta == "jupy list":
             print("-- Jupy$ list --".center(158))

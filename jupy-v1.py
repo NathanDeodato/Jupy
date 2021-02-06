@@ -1,10 +1,15 @@
-print("-=" * 79)
-print("-- Jupy$ v1 --".center(158))
-print("-=" * 79)
-
 # Libs
 from time import sleep
 
+# Color
+branco = '\033[1;97m'
+
+print(branco + "-=" * 79)
+print(branco + "-- Jupy$ v1 --".center(158))
+print(branco + "-=" * 79 + branco)
+
+
+# Introdução
 print("Óla! Me chamo Jupy.")
 print("Fui criado, com o objetivo de responder ao usúario,")
 print("ou seja, você. Perguntas as quais tenha a em meu BD(Banco de dados).")
@@ -12,7 +17,7 @@ print("Espero conseguir te ajudar.")
 
 sleep(2)
 
-print("-=" * 79)
+print(branco + "-=" * 79 + branco)
 
 def jupyv1():
     from time import sleep
@@ -21,12 +26,12 @@ def jupyv1():
     # Comands Jupy
     print("-- Comandos Jupy --".center(158))
 
-    print("-=" * 79)
+    print(branco + "-=" * 79 + branco)
 
     print("Jupy List - Lista de tipo de informações que ele tem registradas")
     print("Jupy Copy - Copyrigth do Jupy")
 
-    print("-=" * 79)
+    print(branco + "-=" * 79 + branco)
 
     print("[ 1 ] COMANDO JUPY")
     print("[ 2 ] HARDWARE")
@@ -37,7 +42,7 @@ def jupyv1():
     while nicho != 1 and nicho != 2 and nicho != 3 and nicho != 4:
         nicho = int(input("ERRO! Opção: "))
 
-    print("-=" * 79)
+    print(branco + "-=" * 79 + branco)
 
     # Pergunta do usúario
     if nicho != 1:
@@ -45,7 +50,7 @@ def jupyv1():
 
     pergunta = str(input("Pergunta$: ")).lower()
 
-    print("-=" * 79)
+    print(branco + "-=" * 79 + branco)
     
     ## Time
     sleep(2)
@@ -503,7 +508,7 @@ def jupyv1():
     ## Time
     sleep(2)
 
-    print("-=" * 79)
+    print(branco + "-=" * 79 + branco)
 
 
 # Loop do Jupy
@@ -521,17 +526,17 @@ while user == "Azul":
     print("[ Azul ] Novamente")
     print("[ Vermelho ] Sair")
 
-    print("-=" * 79)
+    print(branco + "-=" * 79 + branco)
 
     user = str(input("Opção$: ")).capitalize()
     while user != "Azul" and user != "Vermelho":
         user = str(input("ERRO! Opção$: ")).capitalize()
 
-    print("-=" * 79)
+    print(branco + "-=" * 79 + branco)
 
     if user == "Azul":
         jupyv1()
     elif user == "Vermelho":
         print("Jupy$: Encerrando...".center(158))
-        print("-=" * 79)
+        print(branco + "-=" * 79 + branco)
         break
