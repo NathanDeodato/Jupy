@@ -1,6 +1,10 @@
+# Libs
+from time import sleep
+
 # Colors
 branco = '\033[1;97m'
-cinza = '\033[1;37m'
+cinza = '\033[1;90m'
+reset = '\033[0;0m'
 
 
 def breaklin():
@@ -8,41 +12,46 @@ def breaklin():
 
 
 # DataBase Jupy
-def BDJupy(pergunta, type):
+def BDJupy(question, type):
     """
-        Pergunta -> É a váriavel que vai passar a pergunta para o 'Banco de Dados'.
-        nicho -> É o número do tema que a pergunta representa.
+        question -> É a váriavel que vai passar a question para o 'Banco de Dados'.
+        type -> É o número do tema que a question representa.
     """
     
-    ## Comandos Jupy
-    if nicho == 1:
-        if pergunta == "jupy list":
-            print("-- Jupy$ list --".center(158))
+    print(cinza + "-=" * 79)
+
+    ## Comands Jupy
+    if type == 1:
+        print(cinza + "° Jupy List °")
+        print("° Jupy Copy °" + reset)
+        
+        if question == "jupy list":
+            print(branco + "-- Jupy$ list --".center(158))
             print("° Hardware")
             print("° Linguagem de programação")
-            print("° Consoles")
+            print("° Consoles" + reset)
         
-        elif pergunta == "jupy copy":
-            print("-- (C) NT Developer --".center(158))
+        elif question == "jupy copy":
+            print(branco + "-- (C) NT Developer --".center(158))
 
-    ## Componentes eletrônicos
-    if nicho == 2:
-        if pergunta == "o que e cpu?" or pergunta == "o que e cpu" or pergunta == "o que e uma cpu?" or pergunta == "o que e uma cpu" or pergunta == "o que significa cpu?" or pergunta == "o que significa cpu":
-            print("Jupy$: CPU é a sigla para Central Process Unit, ou Unidade Central de Processamento.")
+    ## Hardware
+    if type == 2:
+        if question == "o que e cpu?" or question == "o que e cpu" or question == "o que e uma cpu?" or question == "o que e uma cpu" or question == "o que significa cpu?" or question == "o que significa cpu":
+            print(branco + "Jupy$: CPU é a sigla para Central Process Unit, ou Unidade Central de Processamento.")
             print("Ele é o principal item de hardware do computador, que também é conhecido como processador.")
-            print("A CPU é responsável por calcular e realizar tarefas determinadas pelo usuário e é considerado o cérebro do PC.")
+            print("A CPU é responsável por calcular e realizar tarefas determinadas pelo usuário e é considerado o cérebro do PC." + reset)
 
-        elif pergunta == "o que e gpu?" or pergunta == "o que e gpu" or pergunta == "o que e uma gpu?" or pergunta == "o que e uma gpu" or pergunta == "o que significa gpu?" or pergunta == "o que significa gpu":
-            print("Jupy$: GPU (Graphics Processing Unit, ou Unidade de Processamento Gráfico), conhecido também")
+        elif question == "o que e gpu?" or question == "o que e gpu" or question == "o que e uma gpu?" or question == "o que e uma gpu" or question == "o que significa gpu?" or question == "o que significa gpu":
+            print(branco + "Jupy$: GPU (Graphics Processing Unit, ou Unidade de Processamento Gráfico), conhecido também")
             print("como VPU ou unidade de processamento visual, é um tipo de microprocessador especializado em processar gráficos")
             print("em computadores pessoais, estações de trabalho ou videogames. GPUs modernas manipulam gráficos")
             print("computadorizados com eficiência e sua estrutura de processamento paralelo os tornam mais capazes neste")
             print("tipo de trabalho que CPUs normais. Uma GPU normalmente é utilizada em placas de vídeo")
             print("(este é chamado de Vídeo Offboard ou Placa de Vídeo Dedicada), mas versões simplificadas são integradas diretamente")
-            print("na placas-mãe o que é chamado de Acelerador Gráfico Integrado ou Placa de Vídeo Onboard.")
+            print("na placas-mãe o que é chamado de Acelerador Gráfico Integrado ou Placa de Vídeo Onboard." + reset)
 
-        elif pergunta == "o que e memoria ram?" or pergunta == "o que e memoria ram" or pergunta == "o que e uma memoria ram?" or pergunta == "o que e uma memoria ram" or pergunta == "o que significa memoria ram?" or pergunta == "o que significa memoria ram":
-            print("Jupy$: A Memória de acesso randômico (português brasileiro) ou Memória de acesso aleatório (português europeu)")
+        elif question == "o que e memoria ram?" or question == "o que e memoria ram" or question == "o que e uma memoria ram?" or question == "o que e uma memoria ram" or question == "o que significa memoria ram?" or question == "o que significa memoria ram":
+            print(branco + "Jupy$: A Memória de acesso randômico (português brasileiro) ou Memória de acesso aleatório (português europeu)")
             print("(do inglês Random Access Memory, frequentemente abreviado para RAM) é um tipo de memória")
             print("que permite a leitura e a escrita, utilizada como memória primária em sistemas eletrônicos digitais.")
 
@@ -51,15 +60,15 @@ def BDJupy(pergunta, type):
             print("Jupy$: A RAM é um componente essencial não apenas nos computadores pessoais, mas em qualquer")
             print("tipo de computador, pois é onde basicamente ficam armazenados os programas básicos operacionais.")
             print("Por mais que exista espaço de armazenamento disponível, na forma de um HDD ou memória flash, é sempre necessária")
-            print("uma certa quantidade de RAM.")
+            print("uma certa quantidade de RAM." + reset)
 
-        elif pergunta == "o que e placa mãe?" or pergunta == "o que e placa mãe" or pergunta == "o que e uma placa mãe?" or pergunta == "o que e uma placa mãe" or pergunta == "o que significa placa mãe?" or pergunta == "o que significa placa mãe":
-            print("Jupy$: A placa-mãe (do inglês motherboard, composto de mother 'mãe' e board 'placa'; também")
+        elif question == "o que e placa mãe?" or question == "o que e placa mãe" or question == "o que e uma placa mãe?" or question == "o que e uma placa mãe" or question == "o que significa placa mãe?" or question == "o que significa placa mãe":
+            print(branco + "Jupy$: A placa-mãe (do inglês motherboard, composto de mother 'mãe' e board 'placa'; também")
             print("chamada em inglês de mainboard) é a parte do computador responsável por conectar e interligar todos os")
             print("componentes, ou seja, processador com memória RAM, disco rígido, placa gráfica, entre outros. Além de permitir o")
-            print("tráfego de informação, a placa também alimenta alguns periféricos com a energia elétrica que recebe da fonte de alimentação.")
+            print("tráfego de informação, a placa também alimenta alguns periféricos com a energia elétrica que recebe da fonte de alimentação." + reset)
 
-        elif pergunta == "o que e fonte?" or pergunta == "o que e fonte" or pergunta == "o que e uma fonte?" or pergunta == "o que e uma fonte" or pergunta == "o que significa fonte?" or pergunta == "o que significa fonte":
+        elif question == "o que e fonte?" or question == "o que e fonte" or question == "o que e uma fonte?" or question == "o que e uma fonte" or question == "o que significa fonte?" or question == "o que significa fonte":
             print("Jupy$: Uma fonte de alimentação é um equipamento usado para alimentar cargas elétricas.")
             print("Cada dispositivo eletroeletrônico necessita de uma fonte para prover energia para seus componentes.")
             print("Esta energia pode variar de acordo com a carga que este equipamento usa.")
@@ -67,7 +76,7 @@ def BDJupy(pergunta, type):
             print("regulador de tensão, pode ser um regulador linear, fonte de energia AC, fonte de alimentação")
             print("ininterrupta ou fonte de energia de alta tensão.")
 
-        elif pergunta == "o que e gabinete?" or pergunta == "o que e gabinete" or pergunta == "o que e uma gabinete?" or pergunta == "o que e um gabinete":
+        elif question == "o que e gabinete?" or question == "o que e gabinete" or question == "o que e uma gabinete?" or question == "o que e um gabinete":
             print("Jupy$: Um gabinete de computador, também conhecido como case, caixa, chassis, carcaça ou torre, é o")
             print("compartimento que contém a maioria dos componentes de um computador (normalmente, excluindo o monitor, teclado e mouse).")
             print("Um case de computador, às vezes, é referido metonimicamente como CPU, referindo-se a um componente situado dentro da caixa.")
@@ -79,14 +88,14 @@ def BDJupy(pergunta, type):
             print("Jupy$: Cases, geralmente, são construídos em aço (muitas vezes, SECC — aço eletrogalvanizado, laminado a frio, e bobina) ou alumínio.")
             print("Plástico é, por vezes, utilizado, e outros materiais, como madeira aparecem em cases construídos em casa.")
 
-        ## Se não tiver nenhuma informação sobre a pergunta
+        ### Se não tiver nenhuma informação sobre a question
         else:
-            pergunta_erro = pergunta.split()
-            print(f"Jupy$: Desculpa, mas não tenho nenhuma informação sobre '{pergunta_erro[-1]}' em meu banco de dados.")
+            question_erro = question.split()
+            print(f"Jupy$: Desculpa, mas não tenho nenhuma informação sobre '{question_erro[-1]}' em meu banco de dados.")
 
-    ## Linguagens de Programação
-    if nicho == 3:
-        if pergunta == "o que e o python?" or pergunta == "o que e o python" or pergunta == "o que e linguagem python?" or pergunta == "o que e a linguagem python" or pergunta == "o que e python?" or pergunta == "o que e python":
+    ## programming language
+    if type == 3:
+        if question == "o que e o python?" or question == "o que e o python" or question == "o que e linguagem python?" or question == "o que e a linguagem python" or question == "o que e python?" or question == "o que e python":
             print("Jupy$: Python é uma linguagem de programação de alto nível, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.")
             print("Foi lançada por Guido van Rossum em 1991. Atualmente possui um modelo de desenvolvimento comunitário, aberto")
             print("e gerenciado pela organização sem fins lucrativos Python Software Foundation.")
@@ -113,7 +122,7 @@ def BDJupy(pergunta, type):
             print("Jupy$: O nome Python teve a sua origem no grupo humorístico britânico Monty Python, criador do")
             print("programa Monty Python's Flying Circus, embora muitas pessoas façam associação com o réptil do mesmo nome (em português, píton ou pitão).")
 
-        elif pergunta == "o que e o javascript?" or pergunta == "o que e o javascript" or pergunta == "o que e a linguagem javascript?" or pergunta == "o que e a linguagem javascript" or pergunta == "o que e javascript?" or pergunta == "o que e javascript":
+        elif question == "o que e o javascript?" or question == "o que e o javascript" or question == "o que e a linguagem javascript?" or question == "o que e a linguagem javascript" or question == "o que e javascript?" or question == "o que e javascript":
             print("Jupy$: JavaScript (frequentemente abreviado como JS) é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem")
             print("dinâmica fraca e multiparadigma (protótipos, orientado a objeto, imperativo e, funcional). Juntamente com HTML e CSS, o JavaScript")
             print("é uma das três principais tecnologias da World Wide Web. JavaScript permite páginas da Web interativas e, portanto, é uma parte essencial")
@@ -147,7 +156,7 @@ def BDJupy(pergunta, type):
             print("Jupy$: Embora existam semelhanças entre JavaScript e Java, incluindo o nome da linguagem, a sintaxe e as respectivas bibliotecas padrão, as duas")
             print("linguagens são distintas e diferem muito no design; JavaScript foi influenciado por linguagens de programação como Self e Scheme.")
 
-        elif pergunta == "o que e o java?" or pergunta == "o que e o java" or pergunta == "o que e linguagem java?" or pergunta == "o que e linguagem java" or pergunta == "o que e java?" or pergunta == "o que e java":
+        elif question == "o que e o java?" or question == "o que e o java" or question == "o que e linguagem java?" or question == "o que e linguagem java" or question == "o que e java?" or question == "o que e java":
             print("Jupy$: Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada")
             print("por James Gosling, na empresa Sun Microsystems. Em 2008 o Java foi adquirido pela empresa Oracle Corporation.")
             print("Diferente das linguagens de programação modernas, que são compiladas para código nativo, a linguagem Java é compilada para")
@@ -155,7 +164,7 @@ def BDJupy(pergunta, type):
             print("A linguagem de programação Java é a linguagem convencional da Plataforma Java, mas não é a sua única linguagem.")
             print("J2ME Para programas e jogos de computador, celular, calculadoras, ou até mesmo o rádio do carro.")
 
-        elif pergunta == "o que e c?" or pergunta == "o que e c" or pergunta == "o que e linguagem c?" or pergunta == "o que e linguagem c" or pergunta == "o que e a c?" or pergunta == "o que e a c" or pergunta == "o que e linguagem a c?" or pergunta == "o que e linguagem a c":
+        elif question == "o que e c?" or question == "o que e c" or question == "o que e linguagem c?" or question == "o que e linguagem c" or question == "o que e a c?" or question == "o que e a c" or question == "o que e linguagem a c?" or question == "o que e linguagem a c":
             print("Jupy$: C é uma linguagem de programação compilada de propósito geral, estruturada, imperativa, procedural, padronizada pela")
             print("Organização Internacional para Padronização (ISO), criada em 1972 por Dennis Ritchie na empresa AT&T Bell Labs para desenvolvimento")
             print("do sistema operacional Unix (originalmente escrito em Assembly).")
@@ -165,7 +174,7 @@ def BDJupy(pergunta, type):
             print("Jupy$: C é uma das linguagens de programação mais populares e existem poucas arquiteturas para as quais não existem compiladores para C.")
             print("C tem influenciado muitas outras linguagens de programação (por exemplo, a linguagem Java), mais notavelmente C++, que originalmente começou como uma extensão para C.")
 
-        elif pergunta == "o que e c++?" or pergunta == "o que e c++" or pergunta == "o que e linguagem c++?" or pergunta == "o que e linguagem c++" or pergunta == "o que e a c++?" or pergunta == "o que e a c++":
+        elif question == "o que e c++?" or question == "o que e c++" or question == "o que e linguagem c++?" or question == "o que e linguagem c++" or question == "o que e a c++?" or question == "o que e a c++":
             print("Jupy$: C++ (em português: lê-se 'cê mais mais', em inglês lê-se see plus plus) é uma linguagem de programação compilada multi-paradigma")
             print("(seu suporte inclui linguagem imperativa, orientada a objetos e genérica) e de uso geral. Desde os anos 1990 é uma das linguagens comerciais mais")
             print("populares, sendo bastante usada também na academia por seu grande desempenho e base de utilizadores.")
@@ -177,13 +186,13 @@ def BDJupy(pergunta, type):
             print("herança múltipla, gabaritos e tratamento de exceções. Após a padronização ISO realizada em 1998 e a posterior revisão realizada em 2003, uma nova versão da")
             print("especificação da linguagem foi lançada em dezembro de 2014, conhecida informalmente como C++17.")
 
-        elif pergunta == "o que e c#?" or pergunta == "o que e c#" or pergunta == "o que e linguagem c#?" or pergunta == "o que e linguagem c#" or pergunta == "o que e a c#?" or pergunta == "o que e a c#":
+        elif question == "o que e c#?" or question == "o que e c#" or question == "o que e linguagem c#?" or question == "o que e linguagem c#" or question == "o que e a c#?" or question == "o que e a c#":
             print("Jupy$: C# é uma linguagem de programação, multiparadigma, de tipagem forte, desenvolvida pela Microsoft como parte da plataforma .NET.")
             print("A sua sintaxe orientada a objetos foi baseada no C++ mas inclui muitas influências de outras linguagens de programação, como Object Pascal e, principalmente, Java.")
             print("O código fonte é compilado para Common Intermediate Language (CIL) que é interpretado pela máquina virtual Common Language Runtime (CLR).")
             print("C# é uma das linguagens projetadas para funcionar na Common Language Infrastructure da plataforma .NET Framework.")
 
-        elif pergunta == "o que e lua?" or pergunta == "o que e lua" or pergunta == "o que e linguagem lua?" or pergunta == "o que e linguagem lua":
+        elif question == "o que e lua?" or question == "o que e lua" or question == "o que e linguagem lua?" or question == "o que e linguagem lua":
             print("Jupy$: Lua é uma linguagem de programação interpretada, de script em alto nível, com tipagem dinâmica e multiparadigma, reflexiva e leve, projetada")
             print("por Tecgraf da PUC-Rio em 1993 para expandir aplicações em geral, de forma extensível (que une partes de um programa feitas em mais de uma linguagem), para")
             print("prototipagem e para ser embarcada em softwares complexos, como jogos. Assemelha-se com Python, Ruby e Icon, entre outras.")
@@ -201,7 +210,7 @@ def BDJupy(pergunta, type):
             print("É tipada dinamicamente, interpretada a partir de bytecodes, e tem gerenciamento automático de memória com coleta de lixo.")
             print("Essas características fazem de Lua uma linguagem ideal para configuração, automação (scripting) e prototipagem rápida.")
 
-        elif pergunta == "o que e php?" or pergunta == "o que e php" or pergunta == "o que e linguagem php?" or pergunta == "o que e linguagem php":
+        elif question == "o que e php?" or question == "o que e php" or question == "o que e linguagem php?" or question == "o que e linguagem php":
             print("Jupy$: PHP (um acrônimo recursivo para 'PHP: Hypertext Preprocessor', originalmente Personal Home Page) é uma linguagem interpretada livre,")
             print("usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World Wide Web.")
             print("Figura entre as primeiras linguagens passíveis de inserção em documentos HTML, dispensando em muitos casos o uso de arquivos externos para eventuais processamentos de dados.")
@@ -215,7 +224,7 @@ def BDJupy(pergunta, type):
             print("Jupy$: Criado por Rasmus Lerdorf em 1995, o PHP tem a produção de sua implementação principal, referência formal da linguagem, mantida por uma organização chamada The PHP Group.")
             print("O PHP é software livre, licenciado sob a PHP License, uma licença incompatível com a GNU General Public License (GPL) devido a restrições no uso do termo PHP.")
 
-        elif pergunta == "o que e ruby?" or pergunta == "o que e ruby" or pergunta == "o que e linguagem ruby?" or pergunta == "o que e linguagem ruby":
+        elif question == "o que e ruby?" or question == "o que e ruby" or question == "o que e linguagem ruby?" or question == "o que e linguagem ruby":
             print("Jupy$: Ruby é uma linguagem de programação interpretada multiparadigma, de tipagem dinâmica e forte, com gerenciamento de memória automático, originalmente planejada")
             print("e desenvolvida no Japão em 1995, por Yukihiro 'Matz' Matsumoto, para ser usada como linguagem de script. Matsumoto queria desenvolver uma linguagem de")
             print("script que fosse mais poderosa do que Perl, e mais orientada a objetos do que Python. Ruby suporta programação funcional, orientada a objetos, imperativa e reflexiva.")
@@ -229,7 +238,7 @@ def BDJupy(pergunta, type):
             print("MacRuby e HotRuby, cada qual com uma abordagem diferente, com IronRuby, JRuby e MacRuby fornecendo compilação JIT e, JRuby e MacRuby também fornecendo compilação AOT.")
             print("A partir das séries 1.9 em diante Ruby passou a utilizar por padrão a YARV (Yet Another Ruby VirtualMachine) substituindo a Ruby MRI (Matz's Ruby Interpreter).")
 
-        elif pergunta == "o que e julia?" or pergunta == "o que e julia" or pergunta == "o que e linguagem julia?" or pergunta == "o que e linguagem julia":
+        elif question == "o que e julia?" or question == "o que e julia" or question == "o que e linguagem julia?" or question == "o que e linguagem julia":
             print("Jupy$: Julia é uma linguagem de programação dinâmica de alto nível projetada para atender os requisitos da computação de alto desempenho numérico e científico,")
             print("sendo também eficaz para a programação de propósito geral.")
 
@@ -251,12 +260,12 @@ def BDJupy(pergunta, type):
             print("sofisticado sistema de tipo paramétrico. Enquanto CLOS acrescenta expedição múltipla para Common Lisp, a adição é opt-in: funções só definidos pelo usuário explicitamente")
             print("declarados genérico pode ser estendida. Em Julia, Dylan e Fortress, por outro lado, essa extensibilidade é o padrão e funções internas do sistema são todos genéricos e extensíveis.")
 
-        elif pergunta == "o que e go?" or pergunta == "o que e go" or pergunta == "o que e linguagem go?" or pergunta == "o que e linguagem go":
+        elif question == "o que e go?" or question == "o que e go" or question == "o que e linguagem go?" or question == "o que e linguagem go":
             print("Jupy$: Go é uma linguagem de programação criada pela Google e lançada em código livre em novembro de 2009. É uma linguagem compilada e focada em produtividade")
             print("e programação concorrente, baseada em trabalhos feitos no sistema operacional chamado Inferno. O projeto inicial da linguagem foi feito em setembro de 2007")
             print("por Robert Griesemer, Rob Pike e Ken Thompson. Atualmente, há implementações para Windows, Linux, Mac OS X e FreeBSD")
 
-        elif pergunta == "o que e swift?" or pergunta == "o que e swift" or pergunta == "o que e linguagem swift?" or pergunta == "o que e linguagem swift":
+        elif question == "o que e swift?" or question == "o que e swift" or question == "o que e linguagem swift?" or question == "o que e linguagem swift":
             print("Jupy$: Swift é uma linguagem de programação desenvolvida pela Apple para desenvolvimento no iOS, macOS, watchOS, tvOS e Linux.")
             print("Swift foi desenvolvida para manter compatibilidade com a API Cocoa e com código existente em Objective-C.")
             print("O compilador usa a infraestrutura do LLVM e é distribuído junto do Xcode desde a versão 6.")
@@ -271,14 +280,14 @@ def BDJupy(pergunta, type):
             print("Jupy$: Em março de 2017, Swift ficou entre as 10 linguagens mais populares, de acordo com o")
             print("Índice Tiobe, e atualmente está entre as 20 mais populares. De acordo com uma pesquisa conduzida pela RedMonk, está entre as 10 linguagens mais populares.")
         
-        ## Se não tiver nenhuma informação sobre a pergunta
+        ### Se não tiver nenhuma informação sobre a question
         else:
-            pergunta_erro = pergunta.split()
-            print(f"Jupy$: Desculpa, mas não tenho nenhuma informação sobre '{pergunta_erro[-1]}' em meu banco de dados.")
+            question_erro = question.split()
+            print(f"Jupy$: Desculpa, mas não tenho nenhuma informação sobre '{question_erro[-1]}' em meu banco de dados.")
 
     ## Consoles
-    if nicho == 4:
-        if pergunta == "o que e um xbox 360?" or pergunta == "o que e um xbox 360" or pergunta == "o que e o xbox 360?" or pergunta == "o que e o xbox 360" or pergunta == "o que e xbox 360?" or pergunta == "o que e xbox 360":
+    if type == 4:
+        if question == "o que e um xbox 360?" or question == "o que e um xbox 360" or question == "o que e o xbox 360?" or question == "o que e o xbox 360" or question == "o que e xbox 360?" or question == "o que e xbox 360":
             print("Jupy$: O Xbox 360 é um console de video games desenvolvido pela Microsoft. Como sucessor do Xbox original, é o segundo console da série Xbox.")
             print("Ele competiu com o PlayStation 3 da Sony e o Wii da Nintendo como parte da sétima geração de consoles.")
             print("Foi oficialmente anunciado na MTV em 12 de maio de 2005, com lançamento detalhado e informações dos jogos anunciadas mais tarde na edição de 2005 da E3.")
@@ -294,7 +303,7 @@ def BDJupy(pergunta, type):
             print("O lançamento desses serviços adicionais e periféricos ajudou a marca Xbox a crescer a partir de jogos para englobar todos os")
             print("multimídia, transformando-o em um hub para entretenimento na sala de estar.")
 
-        elif pergunta == "o que e um xbox one?" or pergunta == "o que e um xbox one" or pergunta == "o que e o xbox one?" or pergunta == "o que e o xbox one" or pergunta == "o que e xbox one?" or pergunta == "o que e xbox one":
+        elif question == "o que e um xbox one?" or question == "o que e um xbox one" or question == "o que e o xbox one?" or question == "o que e o xbox one" or question == "o que e xbox one?" or question == "o que e xbox one":
             print("Jupy$: Xbox One é um console de videojogos, da oitava geração, produzida pela empresa Microsoft, lançado em 2013, como a terceira edição da série Xbox")
             print("e, sucessor do Xbox 360. Competindo diretamente com os consoles PlayStation 4 e Nintendo Switch. Introduzido no mercado oito anos")
             print("após o lançamento do Xbox 360. O Xbox One apresenta jogos com gráficos de alta definição superiores aos vistos no seu antecessor.")
@@ -302,7 +311,7 @@ def BDJupy(pergunta, type):
             print("no evento especial Xbox Reveal, como o sucessor do Xbox 360. Seu lançamento oficial foi feito em novembro de 2013 custando US$ 499,00 (€ 499,00 ou R$ 2.299,00).")
             print("O codinome de desenvolvimento do Xbox One foi denominado de Durango e foi anunciado oficialmente no dia 21 de maio de 2013.")
 
-        elif pergunta == "o que e um xbox series x?" or pergunta == "o que e um xbox series x" or pergunta == "o que e o xbox series x?" or pergunta == "o que e o xbox series x" or pergunta == "o que e xbox series x?" or pergunta == "o que e xbox series x":
+        elif question == "o que e um xbox series x?" or question == "o que e um xbox series x" or question == "o que e o xbox series x?" or question == "o que e o xbox series x" or question == "o que e xbox series x?" or question == "o que e xbox series x":
             print("Jupy$: O Xbox Series X e o Series S (coletivamente chamados de Xbox Series X/S[a]) são consoles domésticos de jogos eletrônicos desenvolvidos pela Microsoft.")
             print("É a quarta geração da família de consoles Xbox; foi anunciada pela primeira vez durante a E3 2019 como Project Scarlett.")
             print("Ambos os consoles foram lançados em 10 de novembro de 2020.")
@@ -332,7 +341,7 @@ def BDJupy(pergunta, type):
             print("Baixa Latência (ALLM), que estão sendo incorporados às televisões mais recentes. O console terá aceleração de hardware de áudio dedicada.")
             print("Um recurso chamado 'audio ray tracing' usará os processadores gráficos de ray tracing para processar o áudio espacial da mesma maneira para melhorar a imersão de áudio para o jogador.")
 
-        elif pergunta == "o que e um xbox series s?" or pergunta == "o que e um xbox series s" or pergunta == "o que e o xbox series s?" or pergunta == "o que e o xbox series s" or pergunta == "o que e xbox series s?" or pergunta == "o que e xbox series s":
+        elif question == "o que e um xbox series s?" or question == "o que e um xbox series s" or question == "o que e o xbox series s?" or question == "o que e o xbox series s" or question == "o que e xbox series s?" or question == "o que e xbox series s":
             print("Jupy$: O Xbox Series X e o Series S (coletivamente chamados de Xbox Series X/S[a]) são consoles domésticos de jogos eletrônicos desenvolvidos pela Microsoft.")
             print("É a quarta geração da família de consoles Xbox; foi anunciada pela primeira vez durante a E3 2019 como Project Scarlett.")
             print("Ambos os consoles foram lançados em 10 de novembro de 2020.")
@@ -354,7 +363,7 @@ def BDJupy(pergunta, type):
             print("chegar a 120 quadros por segundo nesta resolução. Apesar disso, o console tem todas as funções equivalentes ao Xbox Series X, incluindo portas, expansões e suporte a jogos.")
             print("A unidade tem um formato menor e será enviada com um case branco fosco em contraste com o case preto fosco do lançamento inicial do Series X.")
 
-        elif pergunta == "o que e um ps2?" or pergunta == "o que e um ps2" or pergunta == "o que e o ps2?" or pergunta == "o que e o ps2" or pergunta == "o que e ps2?" or pergunta == "o que e ps2":
+        elif question == "o que e um ps2?" or question == "o que e um ps2" or question == "o que e o ps2?" or question == "o que e o ps2" or question == "o que e ps2?" or question == "o que e ps2":
             print("Jupy$: O PlayStation 2 (oficialmente abreviado como PS2) é um console de jogos eletrônicos produzido pela Sony Computer Entertainment.")
             print("Foi lançado no dia 4 de março de 2000 no Japão, no dia 26 de outubro na América do Norte, e posteriormente, no dia 24 de novembro na Europa e 3 de dezembro no Brasil.")
             print("Foi o sucessor do PlayStation. O PlayStation 2 é um console de sexta geração, que competiu com o Dreamcast da Sega, o GameCube da Nintendo e o Xbox da Microsoft.")
@@ -372,7 +381,7 @@ def BDJupy(pergunta, type):
             print("155 milhões de unidades de PlayStation 2 e mais de 420 milhões de unidades de jogos originais do console. Foram lançados mais de 4000 jogos oficiais, licenciados para o console.")
             print("O último jogo lançado para PlayStation 2 foi Pro Evolution Soccer 2014 lançado em 8 de novembro de 2013.")
 
-        elif pergunta == "o que e um ps3?" or pergunta == "o que e um ps3" or pergunta == "o que e o ps3?" or pergunta == "o que e o ps3" or pergunta == "o que e ps3?" or pergunta == "o que e ps3":
+        elif question == "o que e um ps3?" or question == "o que e um ps3" or question == "o que e o ps3?" or question == "o que e o ps3" or question == "o que e ps3?" or question == "o que e ps3":
             print("Jupy$: O PlayStation 3 (PS3) é um console de videogames desenvolvido pela Sony Computer Entertainment. É o sucessor do PlayStation 2 e faz parte da marca PlayStation de consoles.")
             print("Foi lançado em 11 de novembro de 2006, no Japão, 17 de novembro de 2006 na América do Norte e em 23 de março de 2007 na Europa e Oceania.")
             print("O PlayStation 3 compete com o console Xbox 360 da Microsoft e o Wii da Nintendo como parte da sétima geração de consoles de videogames.")
@@ -393,7 +402,7 @@ def BDJupy(pergunta, type):
             print("descontinuadas na Nova Zelândia, porém o sistema permaneceu em produção em outros mercados. A fabricação de novas unidades nos Estados Unidos terminaram em outubro de 2016.")
             print("Em 2017, o Japão foi o último território em que novas unidades ainda estavam sendo produzidas até 29 de maio de 2017, quando a Sony confirmou que o PlayStation 3 era descontinuado no Japão.")
 
-        elif pergunta == "o que e um ps4?" or pergunta == "o que e um ps4" or pergunta == "o que e o ps4?" or pergunta == "o que e o ps4" or pergunta == "o que e ps4?" or pergunta == "o que e ps4":
+        elif question == "o que e um ps4?" or question == "o que e um ps4" or question == "o que e o ps4?" or question == "o que e o ps4" or question == "o que e ps4?" or question == "o que e ps4":
             print("Jupy$: A PlayStation 4 (プレイステーション4 Pureisutēshon Fō?, oficialmente abreviada como PS4) é uma consola de videojogos, da oitava geração com arquitetura x86,")
             print("produzida pela empresa Sony Interactive Entertainment e lançado em Novembro de 2013, como a quarta edição da série PlayStation, sucessora da PlayStation 3, competindo")
             print("directamente com a Wii U da Nintendo e, com a Xbox One da Microsoft.")
@@ -419,7 +428,7 @@ def BDJupy(pergunta, type):
             print("serviço de computação em nuvem baseado em Gaikai, que oferece videojogos e outros conteúdos em stream. Pela incorporação de um botão de partilha (SHARE) no novo comando, o DualShock 4, faz com que seja")
             print("possível exibir conteúdo que está a ser jogado e transmitido ao vivo aos amigos, ou mesmo partilhar jogos através da característica ‘Share Play’, desta maneira a Sony planeia colocar assim mais foco nos aspectos sociais da consola.")
 
-        elif pergunta == "o que e um ps5?" or pergunta == "o que e um ps5" or pergunta == "o que e o ps5?" or pergunta == "o que e o ps5" or pergunta == "o que e ps5?" or pergunta == "o que e ps5":
+        elif question == "o que e um ps5?" or question == "o que e um ps5" or question == "o que e o ps5?" or question == "o que e o ps5" or question == "o que e ps5?" or question == "o que e ps5":
             print("Jupy$: O PlayStation 5, oficialmente abreviado como PS5, é um console de jogos eletrônicos de nona geração, desenvolvido pela Sony Interactive Entertainment. Foi anunciado em outubro de 2018")
             print("e confirmado em outubro de 2019 como o quinto da série PlayStation e sucessor do PlayStation 4. O console foi lançado em 12 de novembro de 2020 na América do Norte, Austrália, Coreia do Sul, Japão, Nova Zelândia")
             print("e Singapura, e em 19 de novembro para o resto do mundo. A plataforma foi lançada em duas versões, um sistema com entrada para disco óptico compatível com Blu-ray Ultra HD para suporte a jogos lançados em mídia física ou baixados")
@@ -449,13 +458,10 @@ def BDJupy(pergunta, type):
             print("O sistema suporta uma unidade óptica Ultra HD Blu-ray compatível com 4K. Embora a instalação do jogo a partir de um disco seja obrigatória para tirar proveito do SSD, o usuário tem algum")
             print("controle de quanto instalar, como instalar apenas os componentes multijogador de um jogo.")
 
-        ## Se não tiver nenhuma informação sobre a pergunta
+        ### Se não tiver nenhuma informação sobre a question
         else:
-            pergunta_erro = pergunta.split()
-            print(f"Jupy$: Desculpa, mas não tenho nenhuma informação sobre '{pergunta_erro[-1]}' em meu banco de dados.")
+            question_erro = question.split()
+            print(f"Jupy$: Desculpa, mas não tenho nenhuma informação sobre '{question_erro[-1]}' em meu banco de dados.")
 
+    print(cinza + "-=" * 79 + reset)
 
-    ## Time
-    sleep(2)
-
-    print(branco + "-=" * 79 + branco)
