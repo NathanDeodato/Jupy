@@ -1,14 +1,20 @@
+# Colors
+branco = '\033[1;97m'
+cinza = '\033[1;37m'
+
+
 def breaklin():
     print("")
 
-def BDjupy(pergunta, nicho):
-    """
-        
 
+# DataBase Jupy
+def BDJupy(pergunta, type):
+    """
         Pergunta -> É a váriavel que vai passar a pergunta para o 'Banco de Dados'.
         nicho -> É o número do tema que a pergunta representa.
     """
     
+    ## Comandos Jupy
     if nicho == 1:
         if pergunta == "jupy list":
             print("-- Jupy$ list --".center(158))
@@ -447,3 +453,9 @@ def BDjupy(pergunta, nicho):
         else:
             pergunta_erro = pergunta.split()
             print(f"Jupy$: Desculpa, mas não tenho nenhuma informação sobre '{pergunta_erro[-1]}' em meu banco de dados.")
+
+
+    ## Time
+    sleep(2)
+
+    print(branco + "-=" * 79 + branco)
