@@ -20,11 +20,10 @@ def BDJupy(question, type):
     
     print(cinza + "-=" * 79)
 
+    print(branco + "-- Jupy Response --".center(158))
+
     ## Comands Jupy
     if type == 1:
-        print(cinza + "° Jupy List °")
-        print("° Jupy Copy °" + reset)
-        
         if question == "jupy list":
             print(branco + "-- Jupy$ list --".center(158))
             print("° Hardware")

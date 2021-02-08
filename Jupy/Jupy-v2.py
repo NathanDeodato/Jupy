@@ -1,5 +1,7 @@
+# Libs
 import PySimpleGUI as sg
 from PySimpleGUI.PySimpleGUI import WINDOW_CLOSED
+from DBJupy import BDJupy
 
 
 def winJupy():
@@ -17,7 +19,7 @@ def winJupy():
         
         [sg.Text("_" * 68)],
 
-        [sg.Text("Pergunta$:", size=(10, 0)), sg.Input(size=(46, 0), key="pergunta"), sg.Button("Send", size=(5, 0))],
+        [sg.Text("Pergunta$:", size=(10, 0)), sg.Input(size=(46, 0), key="question"), sg.Button("Send", size=(5, 0))],
 
         [sg.Output(size=(66, 12))],
         [sg.Text(" " * 45), sg.Text("(C) NT Developer")]
@@ -30,12 +32,14 @@ window = winJupy()
 while True:
     event, values = window.Read()
 
-    # Close window
+    ## Close window
     if event == sg.WIN_CLOSED:
         break
 
-    # Pergunta
-    perg = str(values["pergunta"])
+    ## Type
+    
+    ## Question
+    question = str(values["question"])
 
     if event == "OK":
         pass
