@@ -96,7 +96,7 @@ def BDJupy(question, type):
     ## programming language
     if type == 3:
         if question == "o que e o python?" or question == "o que e o python" or question == "o que e linguagem python?" or question == "o que e a linguagem python" or question == "o que e python?" or question == "o que e python":
-            print("Jupy$: Python é uma linguagem de programação de alto nível, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.")
+            print(branco + "Jupy$: Python é uma linguagem de programação de alto nível, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.")
             print("Foi lançada por Guido van Rossum em 1991. Atualmente possui um modelo de desenvolvimento comunitário, aberto")
             print("e gerenciado pela organização sem fins lucrativos Python Software Foundation.")
             print("Apesar de várias partes da linguagem possuírem padrões e especificações formais, a linguagem como um todo não é formalmente")
@@ -120,7 +120,7 @@ def BDJupy(question, type):
             breaklin()
 
             print("Jupy$: O nome Python teve a sua origem no grupo humorístico britânico Monty Python, criador do")
-            print("programa Monty Python's Flying Circus, embora muitas pessoas façam associação com o réptil do mesmo nome (em português, píton ou pitão).")
+            print("programa Monty Python's Flying Circus, embora muitas pessoas façam associação com o réptil do mesmo nome (em português, píton ou pitão)." + reset)
 
         elif question == "o que e o javascript?" or question == "o que e o javascript" or question == "o que e a linguagem javascript?" or question == "o que e a linguagem javascript" or question == "o que e javascript?" or question == "o que e javascript":
             print("Jupy$: JavaScript (frequentemente abreviado como JS) é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem")
